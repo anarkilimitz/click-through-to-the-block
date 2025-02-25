@@ -1,3 +1,9 @@
+/* Общие стили */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 header {
   background-color: #333;
   padding: 10px;
@@ -24,10 +30,65 @@ nav {
 }
 
 .nav-button:hover {
-  background-color: #cf30b4;
+  background-color: #777;
 }
 
-section {
-  padding: 300px 20px;
-  margin-top: 60px; /* Отступ для учета фиксированной шапки */
+/* Стили для блоков с фото */
+main {
+  padding-top: 80px; /* Отступ для фиксированной шапки */
+}
+
+.photo-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Высота блока на весь экран */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.photo-block:nth-child(odd) {
+  background-color: #f9f9f9; /* Чередующийся фон для блоков */
+}
+
+.photo-block:nth-child(even) {
+  background-color: #e9e9e9;
+}
+
+.content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content h2 {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.content p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .content {
+    padding: 0 20px;
+  }
+
+  .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
 }
