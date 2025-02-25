@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="autor" content="Evgenii anarki">
-	<meta name="copyright" content="Все права принадлежат Evgenii anarki">
-	<title>Переход в болок кнопками</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Адаптивные блоки с фото</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <nav>
-    <a href="#section1" class="nav-button">Раздел 1</a>
-    <a href="#section2" class="nav-button">Раздел 2</a>
-    <a href="#section3" class="nav-button">Раздел 3</a>
-  </nav>
-</header>
+  <header>
+    <nav>
+      <a href="#block1" class="nav-button">Блок 1</a>
+      <a href="#block2" class="nav-button">Блок 2</a>
+      <a href="#block3" class="nav-button">Блок 3</a>
+    </nav>
+  </header>
 
-<section id="section1">
-  <h2>Раздел 1</h2>
-  <p>Контент раздела 1...</p>
-</section>
+  <main>
+    <section id="block1" class="photo-block">
+      <div class="content">
+        <img src="https://via.placeholder.com/600x400" alt="Фото 1">
+        <h2>Заголовок блока 1</h2>
+        <p>Описание блока 1. Это пример текста для первого блока.</p>
+      </div>
+    </section>
 
-<section id="section2">
-  <h2>Раздел 2</h2>
-  <p>Контент раздела 2...</p>
-</section>
+    <section id="block2" class="photo-block">
+      <div class="content">
+        <img src="https://via.placeholder.com/600x400" alt="Фото 2">
+        <h2>Заголовок блока 2</h2>
+        <p>Описание блока 2. Это пример текста для второго блока.</p>
+      </div>
+    </section>
 
-<section id="section3">
-  <h2>Раздел 3</h2>
-  <p>Контент раздела 3...</p>
-</section>
+    <section id="block3" class="photo-block">
+      <div class="content">
+        <img src="https://via.placeholder.com/600x400" alt="Фото 3">
+        <h2>Заголовок блока 3</h2>
+        <p>Описание блока 3. Это пример текста для третьего блока.</p>
+      </div>
+    </section>
+  </main>
+
   <script src="script.js"></script>
 </body>
 </html>
