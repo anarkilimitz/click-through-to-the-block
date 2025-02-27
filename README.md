@@ -1,1 +1,1 @@
-# click-through-to-the-block
+<h1 align="center">Кото-альбом</h1>
